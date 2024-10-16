@@ -1,0 +1,26 @@
+{
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "clear:modules": "rimraf **/node_modules",
+        "clear:lock": "rimraf **/package-lock.json",
+        "clear": "npm run clear:test && npm run clear:locks && npm run clear:modules",
+        "clear:env": "rimraf **/.env",
+        "copy:env": "for d in workspaces/*; do cp ${d}/.env.template ${d}/.env; done",
+        "date": "node -e \"console.log(new Date().toLocaleString())\"",
+        "crear": "node -e \"require('./scripts').crear()\"",
+        "crear:js": "node -e \"require('./scripts').crearJs(process.argv[2])\"",
+        "crear:carpeta": "node -e \"require('./scripts').crearCarpeta(process.argv[2])\"",
+        "borrar": "node -e \"require('./scripts').borrar()\"",
+        "borrar:js": "node -e \"require('./scripts').borrarJs()\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^1.0.0",
+        "rimraf": "^6.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.0.0",
+        "rimraf": "^3.0.2"
+    }
+}
