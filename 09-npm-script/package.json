@@ -1,5 +1,6 @@
 {
     "scripts": {
+        
         "test": "echo \"Error: no test specified\" && exit 1",
         "clear:modules": "rimraf **/node_modules",
         "clear:lock": "rimraf **/package-lock.json",
@@ -11,7 +12,10 @@
         "crear:js": "node -e \"require('./scripts').crearJs(process.argv[2])\"",
         "crear:carpeta": "node -e \"require('./scripts').crearCarpeta(process.argv[2])\"",
         "borrar": "node -e \"require('./scripts').borrar()\"",
-        "borrar:js": "node -e \"require('./scripts').borrarJs()\""
+        "borrar:js": "node -e \"require('./scripts').borrarJs()\"",
+        "imprime:azul": "node -e \"console.log(require('chalk').blue(process.argv[2]))\"",
+        "imprime:rojo": "node -e \"console.log(require('chalk').red(process.argv[2]))\"",
+        "imprime:verde": "node -e \"console.log(require('chalk').green(process.argv[2]))\""
     },
     "author": "",
     "license": "ISC",

@@ -145,3 +145,24 @@ function eliminarNota(rl, nota) {
 
 // Iniciar el editor de notas
 mostrarMenu();
+function descomponerURL(url) {
+    const urlPattern = /^(https?):\/\/(([^.]+)\.)?([^\/:]+)(\/[^?#]*)?(\?[^#]*)?(#.*)?$/;
+    const match = url.match(urlPattern);
+
+    if (!match) {
+        console.error('URL no válida.');
+        return;
+    }
+
+    const [_, protocol, __, subDomain, domainName, folderTree, argumentsFile] = match;
+
+    console.log('Protocol:', protocol);
+    console.log('SubDomain:', subDomain || 'N/A');
+    console.log('DomainName:', domainName);
+    console.log('FolderTree:', folderTree || 'N/A');
+    console.log('ArgumentsFile:', argumentsFile || 'N/A');
+}
+
+// Ejemplo de uso
+const url = 'https://sub.example.com/path/to/file?arg=value';
+descomponerURL(url);

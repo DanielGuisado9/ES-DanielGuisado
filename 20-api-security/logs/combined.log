@@ -1,0 +1,105 @@
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:05:19.558Z"}
+{"level":"info","message":"[2024-11-26T19:05:55.104Z] GET /admin","timestamp":"2024-11-26T19:05:55.104Z"}
+{"level":"info","message":"::1 - - [26/Nov/2024:19:05:55 +0000] \"GET /admin HTTP/1.1\" 401 27 \"-\" \"curl/8.10.1\"","timestamp":"2024-11-26T19:05:55.108Z"}
+{"level":"info","message":"[2024-11-26T19:06:16.911Z] GET /admin","timestamp":"2024-11-26T19:06:16.911Z"}
+{"level":"info","message":"::1 - - [26/Nov/2024:19:06:16 +0000] \"GET /admin HTTP/1.1\" 401 27 \"-\" \"curl/8.10.1\"","timestamp":"2024-11-26T19:06:16.913Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:07:16.282Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:07:27.751Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:07:31.121Z"}
+{"level":"info","message":"[2024-11-26T19:07:33.641Z] GET /admin","timestamp":"2024-11-26T19:07:33.641Z"}
+{"level":"info","message":"::1 - - [26/Nov/2024:19:07:33 +0000] \"GET /admin HTTP/1.1\" 200 26 \"-\" \"curl/8.10.1\"","timestamp":"2024-11-26T19:07:33.655Z"}
+{"level":"info","message":"[2024-11-26T19:08:01.058Z] GET /usuario","timestamp":"2024-11-26T19:08:01.058Z"}
+{"level":"info","message":"::1 - - [26/Nov/2024:19:08:01 +0000] \"GET /usuario HTTP/1.1\" 404 146 \"-\" \"curl/8.10.1\"","timestamp":"2024-11-26T19:08:01.061Z"}
+{"level":"info","message":"[2024-11-26T19:08:33.207Z] GET /vip","timestamp":"2024-11-26T19:08:33.207Z"}
+{"level":"info","message":"::1 - - [26/Nov/2024:19:08:33 +0000] \"GET /vip HTTP/1.1\" 200 24 \"-\" \"curl/8.10.1\"","timestamp":"2024-11-26T19:08:33.217Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:08:39.994Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:08:40.475Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:14:31.113Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:14:36.783Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:14:58.553Z"}
+{"level":"info","message":"[2024-11-26T19:15:15.271Z] GET /","timestamp":"2024-11-26T19:15:15.271Z"}
+{"level":"info","message":"::1 - - [26/Nov/2024:19:15:15 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\"","timestamp":"2024-11-26T19:15:15.279Z"}
+{"level":"info","message":"[2024-11-26T19:15:32.468Z] GET /rutaProtegida","timestamp":"2024-11-26T19:15:32.468Z"}
+{"level":"info","message":"::1 - - [26/Nov/2024:19:15:32 +0000] \"GET /rutaProtegida HTTP/1.1\" 401 24 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\"","timestamp":"2024-11-26T19:15:32.473Z"}
+{"level":"info","message":"[2024-11-26T19:15:52.172Z] GET /publica","timestamp":"2024-11-26T19:15:52.172Z"}
+{"level":"info","message":"::1 - - [26/Nov/2024:19:15:52 +0000] \"GET /publica HTTP/1.1\" 200 28 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\"","timestamp":"2024-11-26T19:15:52.174Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:52:46.939Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:52:51.024Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:53:04.180Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:53:06.105Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T19:54:16.041Z"}
+{"level":"info","message":"[2024-11-26T19:54:23.388Z] GET /vip","timestamp":"2024-11-26T19:54:23.388Z"}
+{"level":"info","message":"::1 - - [26/Nov/2024:19:54:23 +0000] \"GET /vip HTTP/1.1\" 200 24 \"-\" \"curl/8.10.1\"","timestamp":"2024-11-26T19:54:23.400Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T20:15:48.866Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-26T20:15:49.434Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-12-02T11:58:29.987Z"}
+{"level":"info","message":"[2024-12-02T12:00:11.647Z] GET /publica","timestamp":"2024-12-02T12:00:11.647Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:00:11 +0000] \"GET /publica HTTP/1.1\" 200 28 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:00:11.652Z"}
+{"level":"info","message":"[2024-12-02T12:00:40.873Z] GET /rutaProtegida","timestamp":"2024-12-02T12:00:40.873Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:00:40 +0000] \"GET /rutaProtegida HTTP/1.1\" 401 47 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:00:40.886Z"}
+{"level":"info","message":"[2024-12-02T12:04:01.770Z] GET /rutaProtegida","timestamp":"2024-12-02T12:04:01.771Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:04:01 +0000] \"GET /rutaProtegida HTTP/1.1\" 401 27 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:04:01.774Z"}
+{"level":"info","message":"[2024-12-02T12:05:07.459Z] GET /rutaProtegida","timestamp":"2024-12-02T12:05:07.459Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:05:07 +0000] \"GET /rutaProtegida HTTP/1.1\" 401 47 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:05:07.460Z"}
+{"level":"info","message":"[2024-12-02T12:07:55.128Z] GET /rutaProtegida","timestamp":"2024-12-02T12:07:55.128Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:07:55 +0000] \"GET /rutaProtegida HTTP/1.1\" 200 16 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:07:55.136Z"}
+{"level":"info","message":"[2024-12-02T12:08:19.121Z] GET /rutaProtegida","timestamp":"2024-12-02T12:08:19.121Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:08:19 +0000] \"GET /rutaProtegida HTTP/1.1\" 200 16 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:08:19.130Z"}
+{"level":"info","message":"[2024-12-02T12:09:05.083Z] GET /vip","timestamp":"2024-12-02T12:09:05.083Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:09:05 +0000] \"GET /vip HTTP/1.1\" 200 24 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:09:05.092Z"}
+{"level":"info","message":"[2024-12-02T12:11:26.646Z] GET /publica","timestamp":"2024-12-02T12:11:26.646Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:11:26 +0000] \"GET /publica HTTP/1.1\" 200 28 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:11:26.647Z"}
+{"level":"info","message":"[2024-12-02T12:11:43.395Z] GET /publica","timestamp":"2024-12-02T12:11:43.395Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:11:43 +0000] \"GET /publica HTTP/1.1\" 200 28 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:11:43.396Z"}
+{"level":"info","message":"[2024-12-02T12:11:54.187Z] GET /vip","timestamp":"2024-12-02T12:11:54.187Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:11:54 +0000] \"GET /vip HTTP/1.1\" 401 47 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:11:54.190Z"}
+{"level":"info","message":"[2024-12-02T12:12:10.985Z] GET /vip","timestamp":"2024-12-02T12:12:10.985Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:12:10 +0000] \"GET /vip HTTP/1.1\" 403 46 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:12:10.995Z"}
+{"level":"info","message":"[2024-12-02T12:12:23.597Z] GET /vip","timestamp":"2024-12-02T12:12:23.597Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:12:23 +0000] \"GET /vip HTTP/1.1\" 200 24 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:12:23.606Z"}
+{"level":"info","message":"[2024-12-02T12:12:39.999Z] GET /admin","timestamp":"2024-12-02T12:12:39.999Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:12:40 +0000] \"GET /admin HTTP/1.1\" 403 46 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:12:40.008Z"}
+{"level":"info","message":"[2024-12-02T12:12:51.461Z] GET /admin","timestamp":"2024-12-02T12:12:51.462Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:12:51 +0000] \"GET /admin HTTP/1.1\" 200 26 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:12:51.471Z"}
+{"level":"info","message":"[2024-12-02T12:13:10.636Z] GET /rutaProtegida","timestamp":"2024-12-02T12:13:10.636Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:13:10 +0000] \"GET /rutaProtegida HTTP/1.1\" 200 16 \"-\" \"curl/8.10.1\"","timestamp":"2024-12-02T12:13:10.645Z"}
+{"level":"info","message":"[2024-12-02T12:15:01.889Z] GET /rutaProtegida","timestamp":"2024-12-02T12:15:01.889Z"}
+{"level":"info","message":"::1 - - [02/Dec/2024:12:15:01 +0000] \"GET /rutaProtegida HTTP/1.1\" 401 24 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-02T12:15:01.890Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-12-12T19:09:15.005Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-12-12T19:09:15.739Z"}
+{"level":"info","message":"[2024-12-12T19:11:21.117Z] GET /vip","timestamp":"2024-12-12T19:11:21.117Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:11:21 +0000] \"GET /vip HTTP/1.1\" 401 47 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:11:21.140Z"}
+{"level":"info","message":"[2024-12-12T19:12:01.539Z] GET /vip","timestamp":"2024-12-12T19:12:01.539Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:12:01 +0000] \"GET /vip HTTP/1.1\" 200 24 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:12:01.608Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-12-12T19:13:42.970Z"}
+{"level":"info","message":"[2024-12-12T19:13:48.465Z] GET /vip","timestamp":"2024-12-12T19:13:48.465Z"}
+{"level":"error","message":"Error procesando GET /vip: decoded is not defined","stack":"ReferenceError: decoded is not defined\n    at file:///C:/Users/farth/Desktop/DWES/20-api-security/src/middleware/validateTokenMiddleware.js:44:5\n    at Layer.handle [as handle_request] (C:\\Users\\farth\\Desktop\\DWES\\20-api-security\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\farth\\Desktop\\DWES\\20-api-security\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at validateTokenMiddleware (file:///C:/Users/farth/Desktop/DWES/20-api-security/src/middleware/validateTokenMiddleware.js:33:9)","timestamp":"2024-12-12T19:13:48.520Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:13:48 +0000] \"GET /vip HTTP/1.1\" 500 16 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:13:48.530Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-12-12T19:17:02.869Z"}
+{"level":"info","message":"[2024-12-12T19:17:46.025Z] GET /vip","timestamp":"2024-12-12T19:17:46.025Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:17:46 +0000] \"GET /vip HTTP/1.1\" 200 24 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:17:46.125Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-12-12T19:24:55.235Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-12-12T19:24:58.486Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-12-12T19:26:06.570Z"}
+{"level":"info","message":"[2024-12-12T19:27:05.639Z] GET /rutaProtegida","timestamp":"2024-12-12T19:27:05.639Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:27:05 +0000] \"GET /rutaProtegida HTTP/1.1\" 200 16 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:27:05.706Z"}
+{"level":"info","message":"[2024-12-12T19:27:14.600Z] GET /rutaProtegida","timestamp":"2024-12-12T19:27:14.600Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:27:14 +0000] \"GET /rutaProtegida HTTP/1.1\" 401 27 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:27:14.610Z"}
+{"level":"info","message":"[2024-12-12T19:27:22.154Z] GET /rutaProtegida","timestamp":"2024-12-12T19:27:22.154Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:27:22 +0000] \"GET /rutaProtegida HTTP/1.1\" 200 16 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:27:22.206Z"}
+{"level":"info","message":"[2024-12-12T19:38:07.633Z] GET /rutaProtegida","timestamp":"2024-12-12T19:38:07.634Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:38:07 +0000] \"GET /rutaProtegida HTTP/1.1\" 401 47 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:38:07.645Z"}
+{"level":"info","message":"[2024-12-12T19:38:57.317Z] GET /rutaProtegida","timestamp":"2024-12-12T19:38:57.317Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:38:57 +0000] \"GET /rutaProtegida HTTP/1.1\" 401 47 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:38:57.334Z"}
+{"level":"info","message":"[2024-12-12T19:39:46.730Z] GET /rutaProtegida","timestamp":"2024-12-12T19:39:46.730Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:39:46 +0000] \"GET /rutaProtegida HTTP/1.1\" 401 47 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:39:46.739Z"}
+{"level":"info","message":"[2024-12-12T19:40:52.963Z] GET /rutaProtegida","timestamp":"2024-12-12T19:40:52.964Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:40:52 +0000] \"GET /rutaProtegida HTTP/1.1\" 200 16 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:40:52.975Z"}
+{"level":"info","message":"[2024-12-12T19:41:11.075Z] GET /rutaProtegida","timestamp":"2024-12-12T19:41:11.075Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:41:11 +0000] \"GET /rutaProtegida HTTP/1.1\" 401 51 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:41:11.085Z"}
+{"level":"info","message":"[2024-12-12T19:45:03.448Z] GET /vip","timestamp":"2024-12-12T19:45:03.448Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:45:03 +0000] \"GET /vip HTTP/1.1\" 200 24 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:45:03.510Z"}
+{"level":"info","message":"[2024-12-12T19:45:29.214Z] GET /admin","timestamp":"2024-12-12T19:45:29.215Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:45:29 +0000] \"GET /admin HTTP/1.1\" 403 46 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:45:29.228Z"}
+{"level":"info","message":"[2024-12-12T19:45:54.297Z] GET /admin","timestamp":"2024-12-12T19:45:54.297Z"}
+{"level":"info","message":"::1 - - [12/Dec/2024:19:45:54 +0000] \"GET /admin HTTP/1.1\" 200 26 \"-\" \"PostmanRuntime/7.43.0\"","timestamp":"2024-12-12T19:45:54.308Z"}
