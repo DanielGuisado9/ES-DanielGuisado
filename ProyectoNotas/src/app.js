@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import notasRoutes from './routes/notasRoutes';
+import notasRoutes from './routes/notasRoutes.js';
 import {logger} from './utils/logger.js';
 
 dotenv.config();
@@ -14,7 +14,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/api/notas', notasRoutes);
+app.use('/api/notes', notasRoutes);
 
 app.use((err, req, res, next) => {
     logger.error(err.message);

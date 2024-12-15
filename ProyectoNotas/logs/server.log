@@ -1,0 +1,11 @@
+[32minfo[39m: Request: GET /users {"timestamp":"2024-12-15T23:00:57.861Z"}
+[32minfo[39m: Request: GET / {"timestamp":"2024-12-15T23:02:23.551Z"}
+[32minfo[39m: Request: GET /notes {"timestamp":"2024-12-15T23:02:28.659Z"}
+[32minfo[39m: Request: GET / {"timestamp":"2024-12-15T23:04:18.836Z"}
+[32minfo[39m: Request: GET / {"timestamp":"2024-12-15T23:04:24.836Z"}
+[32minfo[39m: Request: GET / {"timestamp":"2024-12-15T23:05:10.345Z"}
+[32minfo[39m: Request: GET / {"timestamp":"2024-12-15T23:05:12.092Z"}
+[32minfo[39m: Request: GET / {"timestamp":"2024-12-15T23:05:54.912Z"}
+[32minfo[39m: Request: GET / {"timestamp":"2024-12-15T23:07:41.261Z"}
+[32minfo[39m: Request: GET / {"timestamp":"2024-12-15T23:13:41.264Z"}
+[32minfo[39m: Request: POST / {"timestamp":"2024-12-15T23:14:41.210Z"}

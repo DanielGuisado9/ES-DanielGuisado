@@ -99,6 +99,83 @@ export const createNote = (req, res, next) => {
   });
 };
 
+// Listar Notas
+export const listarNotas = (req, res) => {
+    const { query } = parse(req.url, true);
+    const {
+      ordenarPor = 'titulo',
+      orden = 'asc',
+      filtroTitulo = '',
+      filtroContenido = '',
+      fechaInicio,
+      fechaFin,
+      fechaCampo = 'created', // Puede ser 'created' o 'modified'
+      pagina = 1,
+      elementosPorPagina = 10
+    } = query;
+  
+    let notas = fs.readdirSync(dataFolder)
+      .filter(file => file.endsWith('.note'))
+      .map(file => {
+        const filePath = path.join(dataFolder, file);
+        const metadata = getMetadata(filePath);
+        const content = fs.readFileSync(filePath, 'utf8');
+        return {
+          titulo: file.replace('.note', ''),
+          contenido: content,
+          ...metadata
+        };
+      });
+  
+    // Filtro por título
+    if (filtroTitulo) {
+      notas = notas.filter(nota => nota.titulo.toLowerCase().includes(filtroTitulo.toLowerCase()));
+    }
+  
+    // Filtro por contenido
+    if (filtroContenido) {
+      notas = notas.filter(nota => nota.contenido.toLowerCase().includes(filtroContenido.toLowerCase()));
+    }
+  
+    // Filtro por rango de fechas (creación o modificación)
+    if (fechaInicio || fechaFin) {
+      const inicio = fechaInicio ? new Date(fechaInicio) : new Date(0); // Desde el inicio del tiempo si no se especifica
+      const fin = fechaFin ? new Date(fechaFin) : new Date(); // Hasta ahora si no se especifica
+      notas = notas.filter(nota => {
+        const fecha = new Date(nota[fechaCampo]); // Usar 'created' o 'modified'
+        return fecha >= inicio && fecha <= fin;
+      });
+    }
+  
+    // Ordenar notas
+    notas.sort((a, b) => {
+      let comparison = 0;
+      if (ordenarPor === 'titulo') {
+        comparison = a.titulo.localeCompare(b.titulo);
+      } else if (ordenarPor === 'created') {
+        comparison = new Date(a.created) - new Date(b.created);
+      } else if (ordenarPor === 'modified') {
+        comparison = new Date(a.modified) - new Date(b.modified);
+      } else if (ordenarPor === 'size') {
+        comparison = a.size - b.size;
+      }
+      return orden === 'asc' ? comparison : -comparison;
+    });
+  
+    // Paginación
+    const totalElementos = notas.length;
+    const totalPaginas = Math.ceil(totalElementos / elementosPorPagina);
+    const paginaActual = Math.max(1, Math.min(parseInt(pagina, 10), totalPaginas));
+    const inicio = (paginaActual - 1) * elementosPorPagina;
+    const notasPaginadas = notas.slice(inicio, inicio + parseInt(elementosPorPagina, 10));
+  
+    res.json({
+      totalElementos,
+      totalPaginas,
+      paginaActual,
+      notas: notasPaginadas
+    });
+  };
 // Actualizar una nota existente
 export const updateNote = (req, res, next) => {
   const { name } = req.params;

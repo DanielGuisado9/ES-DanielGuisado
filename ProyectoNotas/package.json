@@ -1,27 +1,42 @@
 {
-  "name": "ProyectoNotas",
+  "name": "proyecto-notas",
   "version": "1.0.0",
+  "description": "Notes editor project for \"Entorno Servidor\"",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node --env-file=.env --watch src/index.js",
-    "create": "node src/index.js 1",
-    "edit": "node src/index.js 2",
-    "delete": "node src/index.js 3",
-    "exit": "node src/index.js 4",
-    "test": "jest"
+    "start": "node --watch --env-file=.env src/index.js",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ignore-path .gitignore .",
+    "clear:modules": "rimraf /node_modules",
+    "clear:locks": "rimraf /package-lock.json",
+    "clear": "npm run clear:test && npm run clear:locks && npm run clear:modules",
+    "clear:env": "rimraf */.env",
+    "copy:env": "for d in workspaces/; do cp ${d}/.env.template ${d}/.env; done",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:report": "npx sonarqube-scanner"
   },
   "keywords": [],
-  "author": "Daniel Guisado Núñez",
+  "author": "Daniel Guisado",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/node": "^7.26.2",
+  "dependencies": {
+    "archiver": "^7.0.1",
     "bcrypt": "^5.1.1",
-    "express": "^4.21.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
     "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "jest": "^29.0.0",
+    "neostandard": "github:neostandard/neostandard",
+    "supertest": "^6.2.3"
   }
 }

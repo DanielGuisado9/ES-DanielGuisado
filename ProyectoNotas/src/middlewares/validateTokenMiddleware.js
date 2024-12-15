@@ -23,4 +23,4 @@ const validateTokenMiddleware = async (req, res, next) => {
     }
 };
 
-export {validateTokenMiddleware as default};
+export default validateTokenMiddleware;
