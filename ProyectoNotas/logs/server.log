@@ -14,3 +14,38 @@
 [32minfo[39m: Request: PUT /api/notes {"timestamp":"2024-12-15T23:26:25.547Z"}
 [32minfo[39m: Request: DELETE /api/notes {"timestamp":"2024-12-15T23:26:41.587Z"}
 [32minfo[39m: Request: GET /api/notes {"timestamp":"2024-12-15T23:26:46.733Z"}
+[32minfo[39m: Request: POST /api/notes {"timestamp":"2024-12-15T23:36:05.346Z"}
+[32minfo[39m: Request: POST /api/notes {"timestamp":"2024-12-15T23:36:18.246Z"}
+[32minfo[39m: Request: POST /api/notes {"timestamp":"2024-12-15T23:39:01.674Z"}
+[32minfo[39m: Request: POST /api/notes {"timestamp":"2024-12-15T23:42:51.160Z"}
+[32minfo[39m: Request: POST /api/notes {"timestamp":"2024-12-15T23:42:56.860Z"}
+[32minfo[39m: Request: POST /api/notes {"timestamp":"2024-12-15T23:43:12.048Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-15T23:51:22.848Z"}
+[32minfo[39m: Request: POST /create {"timestamp":"2024-12-15T23:51:33.017Z"}
+[32minfo[39m: Request: DELETE /Dani3 {"timestamp":"2024-12-15T23:57:02.721Z"}
+[32minfo[39m: Request: DELETE /Dani3 {"timestamp":"2024-12-15T23:58:17.177Z"}
+[31merror[39m: ENOENT: no such file or directory, unlink 'C:\Users\User\Desktop\ES-DanielGuisado\ProyectoNotas\src\notes\Dani3.note' {"timestamp":"2024-12-15T23:58:17.179Z"}
+[32minfo[39m: Request: DELETE /Dani2 {"timestamp":"2024-12-15T23:58:36.285Z"}
+[32minfo[39m: Request: POST /create {"timestamp":"2024-12-16T00:00:56.232Z"}
+[31merror[39m: Cannot destructure property 'name' of 'req.body.content' as it is undefined. {"timestamp":"2024-12-16T00:00:56.242Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T00:08:02.335Z"}
+[31merror[39m: Expected ':' after property name in JSON at position 42 {"timestamp":"2024-12-16T00:08:21.874Z"}
+[32minfo[39m: Request: POST /create/Nota%20de%20prueba {"timestamp":"2024-12-16T00:08:43.331Z"}
+[32minfo[39m: Request: POST /create/Nota%20de%20prueba {"timestamp":"2024-12-16T00:09:31.846Z"}
+[32minfo[39m: Request: POST /create/Nota%20de%20prueba {"timestamp":"2024-12-16T00:10:09.168Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T00:13:55.527Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T00:14:13.760Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T00:21:47.623Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T00:25:10.530Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T00:25:50.617Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T00:26:16.327Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T00:29:14.840Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T00:59:29.920Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T01:00:02.391Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T01:03:25.593Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T01:07:16.551Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T01:07:56.825Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T01:08:55.276Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T01:09:24.738Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T01:10:18.721Z"}
+[32minfo[39m: Request: POST /create/Nota%20de%20prueba {"timestamp":"2024-12-16T01:11:31.371Z"}

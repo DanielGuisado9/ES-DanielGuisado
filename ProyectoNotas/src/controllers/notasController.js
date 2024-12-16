@@ -82,8 +82,11 @@ export const getNotes = (req, res, next) => {
 };
 
 // Crear una nueva nota
-export const createNote = (req, res, next) => {
-  const { name, content } = req.body;
+export const createNote = (req, res) => {
+  
+  const name = req.params.name;
+
+  const content = req.body.content;
 
   if (!name || !content) {
     return res.status(400).json({ error: 'Nombre y contenido son requeridos' });
@@ -176,26 +179,35 @@ export const listarNotas = (req, res) => {
       notas: notasPaginadas
     });
   };
+
+
 // Actualizar una nota existente
-export const updateNote = (req, res, next) => {
-  const { name } = req.params;
-  const { content } = req.body;
+export const updateNote = (req, res) => {
+  const name = req.params.name;
+  const content = req.body.content;
 
   if (!content) {
     return res.status(400).json({ error: 'Contenido es requerido' });
   }
 
   const filePath = path.join(notesDir, `${name}.note`);
-  fs.access(filePath, fs.constants.F_OK, err => {
-    if (err) {
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err){
       return res.status(404).json({ error: 'Nota no encontrada' });
+    
     }
-    fs.writeFile(filePath, content, err => {
-      if (err) return next(err);
-      res.json({ message: 'Nota actualizada con éxito' });
+    const updateContent = data + '\n' + content;
+    fs.writeFile(filePath, updateContent, (err) => {
+      if(err) {
+        return res.status(500).json({ error: 'Error al actualizar la nota' });
+      }
+      res.status(200).send({ message: 'Nota actualizada con éxito' });
     });
   });
+
 };
+
+
 
 // Eliminar una nota
 export const deleteNote = (req, res, next) => {

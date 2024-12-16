@@ -7,10 +7,10 @@ const router = express.Router();
 
 const upload = multer({ dest: 'uploads/' }).array('files');
 
-router.get('/', getNotes);
-router.post('/', createNote);
-router.put('/:name', updateNote);
-router.delete('/:name', deleteNote);
+router.get('/list',validateTokenMiddleware, getNotes);
+router.post('/create/:name',validateTokenMiddleware, createNote );
+router.put('/edit/:name',validateTokenMiddleware, updateNote);
+router.delete('/delete/:name',validateTokenMiddleware, deleteNote);
 router.use((req, res) => {
     res.status(404).send('Not found');
 });

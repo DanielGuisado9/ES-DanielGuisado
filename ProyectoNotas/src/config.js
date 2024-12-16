@@ -7,7 +7,7 @@ const config = {
         port: process.env.PORT || 3000,
     },
     security: {
-        JWT_SECRET: process.env.JWT,
+        JWT_SECRET: process.env.JWT_SECRET,
     }
 };
 

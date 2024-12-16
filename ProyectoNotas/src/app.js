@@ -14,7 +14,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/api/notes', notasRoutes);
+app.use(notasRoutes);
 
 app.use((err, req, res, next) => {
     logger.error(err.message);
