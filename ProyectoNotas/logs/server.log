@@ -49,3 +49,11 @@
 [32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T01:09:24.738Z"}
 [32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T01:10:18.721Z"}
 [32minfo[39m: Request: POST /create/Nota%20de%20prueba {"timestamp":"2024-12-16T01:11:31.371Z"}
+[32minfo[39m: Request: DELETE /Dani2 {"timestamp":"2024-12-16T01:11:56.482Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T01:12:14.432Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T01:12:42.878Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T01:13:30.696Z"}
+[32minfo[39m: Request: PUT /edit/Nota%20de%20prueba {"timestamp":"2024-12-16T01:13:46.392Z"}
+[32minfo[39m: Request: POST /create/Nota%20de%20prueba?Authorization=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkRhdmlkIiwiaWF0IjoxNTE2MjM5MDIyfQ.gt4VKspsmF4IcroExHGLTXCd0o8E9J5ZSiuLJ-bi_Zk {"timestamp":"2024-12-16T01:44:41.910Z"}
+[32minfo[39m: Request: POST /create/Nota%20de%20prueba?Authorization=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkRhdmlkIiwiaWF0IjoxNTE2MjM5MDIyfQ.gt4VKspsmF4IcroExHGLTXCd0o8E9J5ZSiuLJ-bi_Zk {"timestamp":"2024-12-16T01:45:23.056Z"}
+[32minfo[39m: Request: GET /list {"timestamp":"2024-12-16T01:46:25.682Z"}

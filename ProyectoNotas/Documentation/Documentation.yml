@@ -1,0 +1,122 @@
+openapi: 3.0.2
+info:
+  title: Proyecto Notas API
+  version: 1.0.0
+paths:
+  /list:
+    get:
+      summary: Lista todas las notas
+      description: Retorna todas las notas disponibles en el sistema.
+      responses:
+        '200':
+          description: Lista de notas recuperada exitosamente.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Notas'
+        '401':
+          description: No autorizado.
+  /create/{name}:
+    post:
+      summary: Crea una nueva nota
+      description: Permite crear una nueva nota en el sistema especificando un nombre y contenido.
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+            example: myNote
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Nota'
+      responses:
+        '201':
+          description: Nota creada exitosamente.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Nota'
+        '400':
+          description: Error de validación.
+  /edit/{name}:
+    put:
+      summary: Edita una nota existente
+      description: Actualiza el contenido de una nota existente en el sistema.
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+            example: myNote
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Nota'
+      responses:
+        '200':
+          description: Nota actualizada exitosamente.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Nota'
+        '404':
+          description: Nota no encontrada.
+  /delete/{name}:
+    delete:
+      summary: Elimina una nota
+      description: Borra una nota existente especificando su nombre.
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+            example: myNote
+      responses:
+        '200':
+          description: Nota eliminada exitosamente.
+        '404':
+          description: Nota no encontrada.
+components:
+  schemas:
+    Notas:
+      type: array
+      items:
+        $ref: '#/components/schemas/Nota'
+    Nota:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: Identificador único de la nota.
+        titulo:
+          type: string
+          description: Título de la nota.
+        contenido:
+          type: string
+          description: Contenido de la nota.
+  responses:
+    ErrorResponse:
+      description: Respuesta de error genérica.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+              message:
+                type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
