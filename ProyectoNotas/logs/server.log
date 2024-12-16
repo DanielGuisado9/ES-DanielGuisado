@@ -9,3 +9,8 @@
 [32minfo[39m: Request: GET / {"timestamp":"2024-12-15T23:07:41.261Z"}
 [32minfo[39m: Request: GET / {"timestamp":"2024-12-15T23:13:41.264Z"}
 [32minfo[39m: Request: POST / {"timestamp":"2024-12-15T23:14:41.210Z"}
+[32minfo[39m: Request: POST /api/notes {"timestamp":"2024-12-15T23:22:30.097Z"}
+[32minfo[39m: Request: GET /api/notes {"timestamp":"2024-12-15T23:23:28.333Z"}
+[32minfo[39m: Request: PUT /api/notes {"timestamp":"2024-12-15T23:26:25.547Z"}
+[32minfo[39m: Request: DELETE /api/notes {"timestamp":"2024-12-15T23:26:41.587Z"}
+[32minfo[39m: Request: GET /api/notes {"timestamp":"2024-12-15T23:26:46.733Z"}
