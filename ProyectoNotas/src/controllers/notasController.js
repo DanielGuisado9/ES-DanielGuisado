@@ -6,6 +6,7 @@ import multer from 'multer';
 import archiver from 'archiver';
 
 // Obtener el directorio actual
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Definir la ruta a la carpeta de notas

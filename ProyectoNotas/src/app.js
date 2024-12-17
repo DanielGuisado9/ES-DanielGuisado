@@ -1,7 +1,11 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import yaml from 'js-yaml';
+import fs from 'fs';
+import path from 'path';
+import swaggerUi from 'swagger-ui-express';
+import { logger } from './utils/logger.js';
 import notasRoutes from './routes/notasRoutes.js';
-import {logger} from './utils/logger.js';
 
 dotenv.config();
 
@@ -11,9 +15,16 @@ app.use(express.json());
 
 app.use((req, res, next) => {
     logger.info(`Request: ${req.method} ${req.originalUrl}`);
-  next();
+    next();
 });
 
+// Ruta para servir la documentación de Swagger
+const documentationPath = path.resolve('./src/Documentation/Documentation.yaml');
+const documentationSwagger = yaml.load(fs.readFileSync(documentationPath, 'utf8'));
+
+app.use('/openapi-doc', swaggerUi.serve, swaggerUi.setup(documentationSwagger));
+
+// Rutas de la aplicación
 app.use(notasRoutes);
 
 app.use((err, req, res, next) => {

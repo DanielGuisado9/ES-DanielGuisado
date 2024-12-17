@@ -11,10 +11,11 @@ router.get('/list',validateTokenMiddleware, getNotes);
 router.post('/create/:name',validateTokenMiddleware, createNote );
 router.put('/edit/:name',validateTokenMiddleware, updateNote);
 router.delete('/delete/:name',validateTokenMiddleware, deleteNote);
+router.post('/upload', upload, uploadNotes);
 router.use((req, res) => {
     res.status(404).send('Not found');
 });
 
-router.post('/upload', upload, uploadNotes);
+
 
 export default router;
