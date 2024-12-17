@@ -1,5 +1,8 @@
-node_modules
-/ProyectoNotas/coverage/
+# Node modules
+/node_modules
+
+# Environment variables
 .env
 
-
+# Coverage directory
+/coverage
